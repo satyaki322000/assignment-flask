@@ -85,6 +85,38 @@ now to manipulate the text or to use design :-
           -> to use jinja to get dynamic values the syntax is:-
               {{ item.value }} where value is a random variable
  
-**********************          Template Inheritance          ************************
+***********************            authentication using SQL ALCHEMY           **************************
 
+created a database in which username and password will get saved and authentication will be done on the basis
+of hashing process so that there may not be or it will be dificult to for a hacker to hack into the database for
+the data.
+
+if we want to inport database :these following commanda are required:-
+
+open the command promt and write:- " pip install flask-sqlalchemy "
+
+*** note:- SQLAlchemy is a medium through which we can connect the source code of python with the database.
+
+## for immporting database write python in CMD(to open python interpreter)
+
+(if you want to view your database you can install/use SQLite Viewer)
+
+>>> from (your python file) import db
+>>> db.create_all()
+
+this will create a database structure
+
+
+if you want to add some data into your database you can use add and commit statement like this:-
+
+>>> db.session.add(your database object)
+>>> db.session.commit()
+
+if you really want to get all the idea of how to use database manipulation you can see this video:-
+(as a reference)
+https://www.youtube.com/watch?v=oA8brF3w5XQ&t=2719s
+
+
+it is a good reference which will describe using flask from basics up to advanced level
+i have used this reference to make my project.
 

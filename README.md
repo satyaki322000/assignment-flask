@@ -62,7 +62,18 @@ after this you must copy the URL and paste it to your browser to see the message
 
 ** Note:- this is your first deployed application
 
+If this error shows in the terminal i.e.:
+## Error: Could not locate a Flask application. You did not provide the 
+was not found in the current directory.
 
+make an environment variable like this:-
+"
+$ env:Flask_APP="<python_file_name>.py"
+"
+then type this:-
+"
+flask run
+"
 
 ***********************       Styling and templating     ************************
 
